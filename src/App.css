@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.bimg{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.blogimages img{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 70% !important;
+  height: 40vh !important;
+  margin: auto;
+  /* text-align: left !important; */
+}

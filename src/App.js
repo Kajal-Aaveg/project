@@ -11,21 +11,30 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import PrivacyP from './components/PrivacyP';
 import Privacy from'./components/Privacy';
+import Blogs from './components/Blogs';
+import Grid from './components/Grid';
+import Blog1 from './components/Blog1';
+import Blog2 from './components/Blog2';
+import Testing from './components/Testing';
 
 
 function App() {
 
   return (
     // <Dashboard/>
-    // <BrowserRouter>
-    // <Routes>
-    //   <Route path={'/'} element={<><Props /></>} />
-    //   <Route path={'/props1'} element={<><Props1 /></>}/>
-    // </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+    <Route path={'*'} element={<>Hello</>} />
+      <Route path={'/'} element={<><Props /></>} />
+      <Route path={'/blog2'} element={<><Blog2 /></>}/>
+    </Routes>
+    </BrowserRouter>
     // <Home/>
     // <PrivacyP/>
-    <Privacy/>
+    // <Privacy/>
+    // <Blogs/>
+    // <Grid/>
+    // <Blog1/>
   );
 }
 
