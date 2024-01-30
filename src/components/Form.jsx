@@ -64,7 +64,7 @@ function Form() {
     const [fuelData, setData] = useState(0);
     const [fuelValue, setRangeData] = useState(0);
 
-    const [file, setFile] = useState('');
+    const [file, setFile] = useState('');   
     // const [setShow] = useState(false);
 
     const validationForm = yup.object().shape({
@@ -157,7 +157,7 @@ function Form() {
                     <div className="flex">
                         <div className="w-[50%] max-sm:w-full p-3 flex  ">
                             <div className="  text-[white] text-xs h-[5vh] mt-[10px] "><ArrowBackIcon className="bg-[#ed8413] rounded-[100px]" /></div>
-                            <h3 className="ml-[10px] text-[26px] max-sm:text-[20px] max-sm:pt-[7px] max-sm:font-semibold ">Add Booking</h3>
+                            <h3 className="ml-[10px] text-[26px] max-sm:text-[18px] max-sm:pt-[8px] max-sm:font-semibold ">Add Booking</h3>
                         </div>
                         <div className="w-[50%] max-sm:w-full p-3">
                             <div className="w-[28%] flex max-sm:w-full max-sm:relative max-sm:left-[59px] relative left-[450px] top-[2.5px] bottom-[2.5px]">

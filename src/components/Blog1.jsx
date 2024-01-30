@@ -52,7 +52,7 @@ function Blog1() {
 
     ]
      
-    const divRef = useRef();
+const divRef = useRef();
 const slug=useParams().slug;
 
     useEffect(() => {
@@ -68,7 +68,7 @@ const slug=useParams().slug;
     
                    const resData=await response.json();
                    const date=new Date(resData.createdAt);
-                   const foramtDate=new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short'}).format(date);
+                   const foramtDate=new Intl.DateTimeFormat('en-GB',{day:'2-digit', month:'short'}).format(date);
                 //   console.log();
                    setPostDate(foramtDate.replace(/\W/g,' '));
                 //    console.log(postDate);
@@ -83,13 +83,7 @@ const slug=useParams().slug;
         }
 
         fun();
-    //   console.log(slug);
-      
-       
-
-
-    
-     
+    //   console.log(slug);     
     }, [])
     
   return (
@@ -128,7 +122,7 @@ const slug=useParams().slug;
                    <div className='flex justify-center items-center  ' >
                     <div className='grid grid-cols-3  '>
                 {
-                    data.map((items, index,) => (
+                    data.map((items, index) => (
 
                         <div key={index} className=' rounded  bg-[#f2f2f2] m-7 '>  
                             

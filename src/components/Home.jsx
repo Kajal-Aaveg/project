@@ -100,7 +100,6 @@ function Home() {
                             <th>Mobile Number</th>
                             <th>Project</th>
                             <th>Edit/Delete</th>
-
                         </tr>
                     </thead>
                     <tbody className='text-white'>
